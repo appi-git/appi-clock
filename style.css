@@ -1,6 +1,8 @@
 body{
   background-color: cornsilk;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
@@ -11,9 +13,6 @@ body div{
 .hour-block,
 .minute-block,
 .second-block{
-  position: relative;
-  left: 500px;
-  top: 150px;
   background-color: deepskyblue;
 }
 
