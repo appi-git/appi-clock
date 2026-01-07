@@ -45,4 +45,7 @@ body div{
   .row{
      flex-direction:row;
   }
+  .grids{
+    padding: 60px;
+  }
 }
