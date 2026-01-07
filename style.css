@@ -22,6 +22,7 @@ body div{
 }
 
 .second-block{
+  display:none;
 }
 
 .row{
@@ -30,4 +31,18 @@ body div{
 .grids{
   border: 2px solid black;
   padding: 30px;
+}
+
+@media screen and (orientation: portrait){
+  body{
+    flex-direction: column;
+  }
+  .hour-block,
+.minute-block,
+.second-block{
+  flex-direction: column;
+  .row{
+    flex-direction:row;
+  }
+  
 }
