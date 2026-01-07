@@ -30,7 +30,7 @@ body div{
 }
 .grids{
   border: 2px solid black;
-  padding: 30px;
+  padding: 40px;
 }
 
 @media screen and (orientation: portrait){
