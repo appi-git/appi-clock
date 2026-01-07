@@ -41,8 +41,8 @@ body div{
 .minute-block,
 .second-block{
   flex-direction: column;
-  .row{
-    flex-direction:row;
   }
-  
+  .row{
+     flex-direction:row;
+  }
 }
