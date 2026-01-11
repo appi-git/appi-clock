@@ -7,7 +7,7 @@ let ones = 0;
 const clr1 = "transparent";
 const clr2 = "crimson";
 
-const interval = 1000;
+const interval = 10000;
 
 const sixteensH = hour.querySelector(".sixteens");    //sixteens hour
 const hsUn = sixteensH.querySelector(".grid-one");
@@ -125,5 +125,20 @@ function updateTime() {
     hourUpdate();
 }
 
+
 updateTime();
 setInterval(updateTime,interval);
+
+hfDo.addEventListener("click", ()=>{
+    window.open("info/info.html", "_blank");
+});
+
+mfDo.addEventListener("click", ()=>{
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+});

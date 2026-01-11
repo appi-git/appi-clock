@@ -1,0 +1,81 @@
+body{
+    font-family:cursive;
+    font-weight: 500;
+    font-size: larger;
+    background-color: cornsilk;
+}
+
+p{
+    margin: -5px;
+}
+
+.hour-side,
+.minute-side,
+.arrangement-direction {
+}
+
+.active-grid{
+    color: deepskyblue
+}
+
+.inactive-grid{
+    color: crimson;
+}
+
+.block{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.row{
+    background-color: deepskyblue;
+}
+.ones{
+    margin-right: 20px;
+}
+.grids{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+
+
+.block-1 .sixteens,.block-1 .ones,
+.block-1 .fours .grid-three,
+.block-1 .fours .grid-two {background-color: crimson;}
+
+.block-2 .sixteens,
+.block-2 .ones .grid-three,
+.block-2 .fours .grid-two ,
+.block-2 .fours .grid-three{background-color: crimson;}
+
+@media screen and (orientation: portrait){
+    p{
+        margin:2px;
+        font-size: 18px;
+    }
+    .block{
+        flex-direction: column;
+    }
+    .block-2{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .row{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .ones{
+        margin-right: 0;
+    }
+    .block-1 .ones{
+        margin-bottom: 10px;
+    }
+    .block-2 .sixteens{
+        margin-bottom: 10px;
+    }
+    .hint-text{
+        position: relative;
+        top: 130px;
+    }
+}
